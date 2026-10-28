@@ -1,0 +1,385 @@
+{
+  "_readme": "ÚNICA fonte de conteúdo do site. Tudo que aparece nas páginas, no JSON-LD, no sitemap e no llms.txt sai daqui. Rode `npm run build` depois de editar.",
+
+  "_toConfirmWithClient": [
+    { "item": "Endereço: o Google mostra Av. Castelo Branco, 1165; o banner e o blog antigos mostram nº 812. Usamos o do Google.", "onde": "business.address, rodapé, localização, JSON-LD" },
+    { "item": "Qual número é o WhatsApp oficial. Usamos (27) 99977-8853, que aparece em todos os posts. Também existem 99836-4940, 99647-7445 e 99785-3523 no material antigo.", "onde": "business.whatsapp, botão flutuante, todos os links wa.me" },
+    { "item": "'Credenciada junto ao Corpo de Bombeiros do ES' — veio do banner do blog. Confirmar se segue válido e se há credenciamento em outros estados (o banner diz 'ES e Outros').", "onde": "hero.badges, autoridade, FAQ" },
+    { "item": "Registro da oficina de recarga (Extincol) no Inmetro — o site fala em selo Inmetro de forma educativa, mas não afirma número de registro.", "onde": "página de recarga, FAQ" },
+    { "item": "'Cobrimos orçamento de concorrente' — veio do blog (2018). Só fica no ar se ainda for política da empresa.", "onde": "autoridade (diferencial 5)" },
+    { "item": "Cidades atendidas além de Barra de São Francisco — a lista é uma suposição pela região.", "onde": "areaServed, localização, llms.txt" },
+    { "item": "Retirada e entrega de extintores na empresa do cliente — não afirmamos; o texto diz 'combine pelo WhatsApp'.", "onde": "página de recarga" },
+    { "item": "Carga horária e certificado do curso de brigada.", "onde": "página de brigada" },
+    { "item": "Quem está por trás da empresa (o blog é assinado por Matheus Faustino Marim; o Google marca 'empresa de empreendedoras'). Nada disso está no site até o cliente escolher.", "onde": "seção de autoridade" },
+    { "item": "Domínio. O site usa https://extinsan-extintores.vercel.app até existir um domínio próprio.", "onde": "siteUrl, canonical, sitemap" },
+    { "item": "Logo foi redesenhada em SVG a partir do banner do blog. Pedir o arquivo original (vetor) e as cores oficiais.", "onde": "header, favicon, imagem de compartilhamento" }
+  ],
+
+  "siteUrl": "https://extinsan-extintores.vercel.app",
+  "lang": "pt-BR",
+  "locale": "pt_BR",
+
+  "business": {
+    "name": "Extinsan Extintores",
+    "legalName": "Extintores B.S. Francisco ME",
+    "slogan": "Proteção maior ao seu lado",
+    "category": "Fornecedor de sistemas de proteção contra incêndios",
+    "description": "Venda e recarga de extintores, projeto de incêndio e Alvará do Corpo de Bombeiros, sistema de hidrantes (SHP), para-raios (SPDA), gás GLP, curso de brigada e sinalização de emergência em Barra de São Francisco - ES.",
+    "phoneDisplay": "(27) 3756-7469",
+    "phoneE164": "+552737567469",
+    "whatsappDisplay": "(27) 99977-8853",
+    "whatsappE164": "+5527999778853",
+    "whatsappMessage": "Olá, Extinsan! Vim pelo site e quero um orçamento.",
+    "email": "extinsan_extintores@hotmail.com",
+    "address": {
+      "street": "Av. Castelo Branco, 1165",
+      "neighborhood": "Vila Landinha",
+      "city": "Barra de São Francisco",
+      "state": "ES",
+      "stateName": "Espírito Santo",
+      "postalCode": "29800-000",
+      "country": "BR"
+    },
+    "plusCode": "64V9+V6 Vila Landinha, Barra de São Francisco - ES",
+    "geo": { "lat": -18.7552636, "lng": -40.8818966 },
+    "mapsUrl": "https://www.google.com/maps/place/Extinsan+Extintores/@-18.7552636,-40.8818966,17z/data=!4m6!3m5!1s0xb69e7c4c956ce9:0xfacdd0a0c91f37bc!8m2!3d-18.7552636!4d-40.8818966",
+    "mapsEmbed": "https://www.google.com/maps?q=-18.7552636,-40.8818966&z=16&output=embed",
+    "reviewsUrl": "https://www.google.com/maps/place/Extinsan+Extintores/@-18.7552636,-40.8818966,17z/data=!4m8!3m7!1s0xb69e7c4c956ce9:0xfacdd0a0c91f37bc!8m2!3d-18.7552636!4d-40.8818966!9m1!1b1",
+    "blogUrl": "https://extinsan.blogspot.com/",
+    "hours": [
+      { "days": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "label": "Segunda a sexta", "opens": "07:15", "closes": "17:30" },
+      { "days": ["Saturday","Sunday"], "label": "Sábado e domingo", "closed": true }
+    ],
+    "areaServed": ["Barra de São Francisco","Água Doce do Norte","Ecoporanga","Mantenópolis","Vila Pavão","Nova Venécia","Águia Branca","Mantena (MG)"],
+    "rating": { "value": 5.0, "count": 5 },
+    "sister": { "name": "Extincol Extintores", "role": "oficina de recarga de extintores do mesmo grupo, em Barra de São Francisco", "slogan": "Cuidado especial ao seu favor" }
+  },
+
+  "seo": {
+    "title": "Extinsan Extintores | Recarga de Extintores e Alvará do Bombeiro em Barra de São Francisco - ES",
+    "description": "Recarga e venda de extintores com oficina própria em Barra de São Francisco. Projeto de incêndio, Alvará do Corpo de Bombeiros, hidrantes, para-raios, gás GLP e brigada. Orçamento pelo WhatsApp.",
+    "keywords": "recarga de extintores Barra de São Francisco, extintores ES, alvará do corpo de bombeiros, projeto de incêndio, SHP hidrantes, para-raios SPDA, gás GLP, brigada de incêndio, placas fotoluminescentes"
+  },
+
+  "hero": {
+    "eyebrow": "Barra de São Francisco - ES",
+    "title": "Extintor recarregado, projeto aprovado e alvará do Bombeiro sem dor de cabeça.",
+    "subtitle": "Oficina de recarga própria aqui na cidade, projeto de incêndio com responsável técnico e o mesmo profissional do orçamento até a vistoria.",
+    "ctaPrimary": "Pedir orçamento no WhatsApp",
+    "ctaSecondary": "Ligar (27) 3756-7469",
+    "badges": [
+      "Oficina de recarga na própria cidade",
+      "Credenciada junto ao Corpo de Bombeiros - ES",
+      "Projetos com ART",
+      "Nota 5,0 no Google"
+    ],
+    "stats": [
+      { "value": "7", "label": "frentes de serviço contra incêndio" },
+      { "value": "1", "label": "contato do orçamento à vistoria" },
+      { "value": "5,0", "label": "de nota no Google" }
+    ]
+  },
+
+  "authority": {
+    "eyebrow": "Por que a Extinsan",
+    "title": "Recarga que dá para conferir. Projeto que passa na vistoria.",
+    "lead": "Selo falsificado, anel adulterado e lacre reaproveitado existem — e quem descobre é o fiscal, ou pior, o incêndio. Por isso a gente trabalha de um jeito que você consegue checar.",
+    "items": [
+      { "icon": "workshop", "title": "Oficina de recarga na cidade", "text": "A recarga é feita aqui em Barra de São Francisco, na oficina do grupo (Extincol). Menos tempo com o prédio desprotegido e nada de extintor viajando para outra cidade." },
+      { "icon": "seal", "title": "Tudo identificado no extintor", "text": "Selo, anel de manutenção, lacre e etiqueta com data e empresa. A gente mostra o que conferir para você não depender da nossa palavra." },
+      { "icon": "person", "title": "Quem vende acompanha a obra", "text": "O mesmo profissional que faz o orçamento acompanha a execução junto da equipe e responde pela garantia." },
+      { "icon": "doc", "title": "Projeto com responsável técnico", "text": "Projeto de incêndio, SHP, SPDA e gás com ART, preparados para a análise e a vistoria do Corpo de Bombeiros do ES." },
+      { "icon": "price", "title": "Orçamento competitivo", "text": "Trabalhamos com fábricas de primeira linha e condições negociáveis. Traga o orçamento do concorrente que a gente analisa." },
+      { "icon": "shield", "title": "Tudo em um só lugar", "text": "Extintor, hidrante, para-raios, gás, sinalização, iluminação e treinamento. Um fornecedor para regularizar o imóvel inteiro." }
+    ]
+  },
+
+  "process": {
+    "title": "Como funciona",
+    "steps": [
+      { "title": "Você chama", "text": "Pelo WhatsApp, telefone ou formulário. Diga o tipo de imóvel e o que precisa — ou mande foto dos extintores e da notificação do Bombeiro." },
+      { "title": "A gente avalia", "text": "Visita ou análise do que você enviou, levantamento do que a norma exige para o seu imóvel e orçamento por escrito." },
+      { "title": "Executamos e entregamos documentado", "text": "Recarga, instalação ou projeto feitos e entregues com etiqueta, laudo ou ART — o que o fiscal vai pedir na vistoria." }
+    ]
+  },
+
+  "testimonials": [
+    { "author": "Endrik Nardotto", "rating": 5, "date": "2018", "text": "Empresa de excelência! Mantém integridade na execução de projetos, nem mais nem menos, as medidas são as necessárias para o desempenho de segurança das áreas de risco. Contrate e verá o atendimento!", "source": "Google" }
+  ],
+
+  "validityTool": {
+    "title": "Quando vence o seu extintor?",
+    "lead": "Olhe a etiqueta ou o anel do extintor, informe o mês da última recarga e veja quando ele precisa voltar para a oficina."
+  },
+
+  "form": {
+    "title": "Peça seu orçamento",
+    "lead": "Responda em 1 minuto. Você escolhe se prefere receber o retorno por WhatsApp, ligação ou e-mail.",
+    "clientTypes": ["Empresa / comércio","Condomínio","Indústria / galpão","Propriedade rural","Residência","Veículo / caminhão","Órgão público"],
+    "preferredChannels": [
+      { "value": "whatsapp", "label": "WhatsApp" },
+      { "value": "call", "label": "Ligação" },
+      { "value": "email", "label": "E-mail" }
+    ]
+  },
+
+  "faq": [
+    { "q": "De quanto em quanto tempo o extintor precisa ser recarregado?", "a": "Em geral, a manutenção com recarga é anual. A data da última manutenção fica na etiqueta e no anel colorido preso ao gargalo do extintor. O cilindro também passa por teste hidrostático a cada 5 anos. Se o ponteiro do manômetro sair da faixa verde, o extintor foi usado ou o lacre foi violado, a recarga deve ser feita antes do prazo." },
+    { "q": "Como saber se a recarga do meu extintor foi feita de verdade?", "a": "Confira quatro coisas: o selo de conformidade do Inmetro com o nome da empresa que fez o serviço, o anel de identificação da manutenção no gargalo, o lacre intacto no gatilho e a etiqueta com a data e o prazo da próxima manutenção. Selo apagado, anel solto ou lacre reaproveitado são sinais de alerta." },
+    { "q": "A Extinsan faz o Alvará do Corpo de Bombeiros?", "a": "Sim. A Extinsan cuida do licenciamento no Corpo de Bombeiros do Espírito Santo: levantamento do imóvel, projeto de incêndio com ART quando exigido, execução das medidas de segurança e acompanhamento até a vistoria." },
+    { "q": "Quais tipos de extintor vocês recarregam e vendem?", "a": "Pó químico ABC e BC, gás carbônico (CO₂), água pressurizada e espuma mecânica, nos tamanhos usados em comércios, condomínios, indústrias, propriedades rurais e veículos. Também vendemos suportes, placas e extintores novos." },
+    { "q": "Vocês atendem fora de Barra de São Francisco?", "a": "Sim. A loja fica em Barra de São Francisco - ES e a equipe atende a região noroeste do Espírito Santo e cidades vizinhas. Chame no WhatsApp com o nome da cidade para combinarmos o atendimento." },
+    { "q": "Qual o horário de atendimento?", "a": "De segunda a sexta, das 7h15 às 17h30, na Av. Castelo Branco, 1165, Vila Landinha, Barra de São Francisco - ES. Telefone (27) 3756-7469 e WhatsApp (27) 99977-8853." },
+    { "q": "Preciso de para-raios e laudo de SPDA para o alvará?", "a": "Depende da área, da altura e do uso da edificação. Quando o Corpo de Bombeiros exige, é preciso o sistema instalado conforme a ABNT NBR 5419 e o laudo de inspeção com medição de aterramento. A Extinsan faz a avaliação, a instalação e o laudo." },
+    { "q": "Como funciona o orçamento?", "a": "Você manda pelo WhatsApp ou pelo formulário o tipo de imóvel, a cidade e o que precisa — fotos ajudam muito. Para recarga, o orçamento sai pela quantidade e tipo de extintor. Para projetos e instalações, fazemos o levantamento antes de passar o valor." }
+  ],
+
+  "services": [
+    {
+      "slug": "recarga-de-extintores",
+      "name": "Recarga e venda de extintores",
+      "short": "Recarga e manutenção com oficina própria na cidade, venda de extintores novos, suportes e placas.",
+      "icon": "extinguisher",
+      "bullets": ["Pó ABC/BC, CO₂, água e espuma","Teste hidrostático","Selo, anel e etiqueta conferíveis"],
+      "page": {
+        "enabled": true,
+        "title": "Recarga de Extintores em Barra de São Francisco - ES | Extinsan",
+        "description": "Recarga, manutenção e venda de extintores com oficina própria em Barra de São Francisco. Pó ABC, CO₂, água e espuma. Orçamento pelo WhatsApp.",
+        "h1": "Recarga de extintores em Barra de São Francisco",
+        "lead": "Seu extintor recarregado aqui na cidade, com selo, anel e etiqueta que você mesmo consegue conferir.",
+        "intro": [
+          "Extintor vencido é a primeira coisa que o fiscal do Corpo de Bombeiros olha — e a última que você quer descobrir que não funciona. A Extinsan recarrega e faz a manutenção dos extintores na oficina do grupo, a Extincol, aqui em Barra de São Francisco, com os equipamentos necessários para desmontar, inspecionar, recarregar e testar cada cilindro.",
+          "A manutenção de extintores no Brasil segue a ABNT NBR 12962, que separa o serviço em três níveis: a inspeção no local, a manutenção com recarga feita em oficina e a manutenção com teste hidrostático do cilindro, exigida a cada cinco anos. Em cada extintor que sai da oficina vão o selo de conformidade, o anel de identificação da manutenção, o lacre e a etiqueta com a data e o prazo da próxima visita."
+        ],
+        "signsTitle": "Quando o seu extintor precisa de recarga",
+        "signs": ["A etiqueta ou o anel indicam mais de 12 meses desde a última manutenção","O ponteiro do manômetro está fora da faixa verde","O extintor foi usado, mesmo que só um pouco","O lacre do gatilho está rompido ou não existe","Há ferrugem, amassado ou mangueira ressecada","O cilindro passou de 5 anos sem teste hidrostático"],
+        "scopeTitle": "O que fazemos",
+        "scope": ["Recarga de extintores de pó químico ABC e BC","Recarga de extintores de CO₂ (gás carbônico)","Recarga de extintores de água pressurizada e espuma mecânica","Teste hidrostático do cilindro","Troca de mangueira, válvula, manômetro e lacre","Venda de extintores novos, suportes de parede e de piso","Placas de sinalização de extintor","Orientação sobre quantidade e posição dos extintores no imóvel"],
+        "process": [
+          { "title": "Levantamento", "text": "Você informa a quantidade e o tipo dos extintores — uma foto da etiqueta já ajuda." },
+          { "title": "Oficina", "text": "Desmontagem, inspeção, recarga, troca de componentes e teste quando exigido." },
+          { "title": "Identificação", "text": "Selo, anel de manutenção, lacre e etiqueta com a data da próxima recarga." },
+          { "title": "Devolução", "text": "Extintor de volta no lugar certo, com a sinalização em dia. Combine a entrega pelo WhatsApp." }
+        ],
+        "faq": [
+          { "q": "Quanto tempo leva a recarga de um extintor?", "a": "Como a oficina fica na própria cidade, a recarga não depende de envio para fora. O prazo exato depende da quantidade e do tipo de extintor — combine pelo WhatsApp, principalmente se o imóvel não puder ficar sem proteção." },
+          { "q": "O que significa a cor do anel no gargalo do extintor?", "a": "O anel de identificação marca a manutenção feita. A cor muda conforme o ano, o que permite ao fiscal e a você ver de longe se a manutenção está em dia. Anel ausente ou solto é sinal de alerta." },
+          { "q": "Qual extintor eu preciso para o meu comércio?", "a": "Depende do que pode pegar fogo e da área do imóvel. Pó ABC atende a maioria dos comércios; CO₂ é indicado perto de equipamentos elétricos; água pressurizada serve para materiais como papel, madeira e tecido. A Extinsan orienta a quantidade e a posição de acordo com as normas do Corpo de Bombeiros do ES." }
+        ]
+      },
+      "photos": []
+    },
+    {
+      "slug": "projeto-de-incendio-alvara-bombeiros",
+      "name": "Projeto de incêndio e Alvará do Bombeiro",
+      "short": "Licenciamento no Corpo de Bombeiros do ES: levantamento, projeto com ART, execução e acompanhamento da vistoria.",
+      "icon": "blueprint",
+      "bullets": ["Projeto técnico com ART","Execução das medidas exigidas","Acompanhamento até a vistoria"],
+      "page": {
+        "enabled": true,
+        "title": "Projeto de Incêndio e Alvará do Corpo de Bombeiros em Barra de São Francisco - ES | Extinsan",
+        "description": "Licenciamento no Corpo de Bombeiros do ES: projeto de incêndio com ART, execução das medidas de segurança e acompanhamento da vistoria até o alvará.",
+        "h1": "Projeto de incêndio e Alvará do Corpo de Bombeiros",
+        "lead": "Do levantamento do imóvel à vistoria: a gente cuida de tudo que o Corpo de Bombeiros do ES vai pedir.",
+        "intro": [
+          "Para funcionar dentro da lei, comércios, indústrias, condomínios e prédios de uso público precisam estar regularizados no Corpo de Bombeiros Militar do Espírito Santo (CBMES). Na maioria dos casos isso significa ter o Alvará de Licença do Corpo de Bombeiros — e ele só sai quando o imóvel tem as medidas de segurança exigidas para o seu tamanho, altura e uso.",
+          "A Extinsan faz esse caminho com você: levanta o que a norma exige, elabora o projeto de incêndio com responsável técnico e ART quando necessário, executa extintores, hidrantes, sinalização, iluminação, para-raios e gás, e acompanha o processo até a vistoria. Um único fornecedor, do papel à obra."
+        ],
+        "signsTitle": "Você precisa disso se",
+        "signs": ["Vai abrir ou mudar o endereço de uma empresa","Recebeu notificação ou auto de infração do Corpo de Bombeiros","O alvará está vencido ou perto de vencer","Fez reforma, ampliação ou mudou o uso do imóvel","A prefeitura, o banco ou o seguro pediram o alvará","Vai realizar evento ou abrir ao público um espaço novo"],
+        "scopeTitle": "O que fazemos",
+        "scope": ["Levantamento técnico do imóvel e das exigências","Projeto de incêndio com ART","Projeto e execução de sistema hidráulico preventivo (SHP)","Projeto e instalação de para-raios (SPDA) e de gás GLP","Extintores, sinalização e iluminação de emergência","Organização da documentação para protocolo","Acompanhamento das exigências e da vistoria","Renovação do alvará"],
+        "process": [
+          { "title": "Diagnóstico", "text": "Visita ao imóvel e leitura das exigências do CBMES para aquela ocupação." },
+          { "title": "Projeto", "text": "Projeto técnico com ART e lista do que precisa ser instalado ou adequado." },
+          { "title": "Execução", "text": "Instalação das medidas de segurança pela própria equipe da Extinsan." },
+          { "title": "Vistoria", "text": "Documentação organizada e acompanhamento até a emissão do alvará." }
+        ],
+        "faq": [
+          { "q": "Todo imóvel comercial precisa de alvará do Corpo de Bombeiros?", "a": "Imóveis não residenciais e prédios coletivos em geral precisam de licenciamento no Corpo de Bombeiros do ES. O tipo de processo e as medidas exigidas variam com a área, a altura e o uso. A Extinsan avalia o seu caso antes de qualquer orçamento." },
+          { "q": "O que é ART e por que o projeto precisa dela?", "a": "ART é a Anotação de Responsabilidade Técnica, registrada no conselho profissional. Ela identifica o profissional responsável pelo projeto ou pela instalação e é exigida em diversos sistemas de segurança contra incêndio." },
+          { "q": "Recebi uma notificação do Bombeiro. E agora?", "a": "Mande uma foto da notificação pelo WhatsApp. A gente lê as exigências, diz o que precisa ser feito e em quanto tempo, e passa o orçamento para resolver tudo dentro do prazo." }
+        ]
+      },
+      "photos": []
+    },
+    {
+      "slug": "sistema-hidraulico-preventivo-shp",
+      "name": "Sistema hidráulico preventivo (SHP)",
+      "short": "Projeto, execução e manutenção de hidrantes, mangotinhos, reserva de incêndio e bombas.",
+      "icon": "hydrant",
+      "bullets": ["Hidrantes e mangotinhos","Reserva técnica e bombas","Teste e manutenção de mangueiras"],
+      "page": {
+        "enabled": true,
+        "title": "Sistema Hidráulico Preventivo (SHP) e Hidrantes em Barra de São Francisco - ES | Extinsan",
+        "description": "Projeto, instalação e manutenção de sistema hidráulico preventivo: hidrantes, mangotinhos, reserva técnica de incêndio, bombas e mangueiras. Atendimento no noroeste do ES.",
+        "h1": "Sistema hidráulico preventivo (SHP)",
+        "lead": "Hidrantes que funcionam no dia em que precisar — projetados, instalados e acompanhados pelo mesmo profissional.",
+        "intro": [
+          "O sistema hidráulico preventivo, o SHP, é a rede de hidrantes ou mangotinhos que leva água pressurizada para o combate ao fogo dentro da edificação. Ele é exigido pelo Corpo de Bombeiros em imóveis maiores ou de maior risco e envolve reserva técnica de incêndio, tubulação, bomba quando necessário, abrigos, mangueiras, esguichos e registro de recalque. O dimensionamento segue a ABNT NBR 13714 e as normas técnicas do CBMES.",
+          "A Extinsan trabalha com fabricantes de primeira linha e mantém um ponto que o cliente sente na obra: o mesmo profissional que vende e dá a garantia acompanha a execução junto dos supervisores. Quem orçou sabe o que prometeu."
+        ],
+        "signsTitle": "Quando o SHP entra na conversa",
+        "signs": ["O projeto de incêndio do imóvel exige hidrantes ou mangotinhos","O prédio tem hidrantes, mas ninguém sabe se a bomba funciona","As mangueiras nunca foram testadas ou estão ressecadas","A caixa d'água não reserva volume para incêndio","Houve ampliação e o sistema antigo ficou subdimensionado"],
+        "scopeTitle": "O que fazemos",
+        "scope": ["Projeto de hidrantes e mangotinhos","Execução da rede, abrigos e registro de recalque","Reserva técnica de incêndio","Instalação de bomba de incêndio","Fornecimento de mangueiras, esguichos e chaves","Inspeção e manutenção de mangueiras de incêndio","Testes de funcionamento do sistema","Adequação de sistemas existentes"],
+        "process": [
+          { "title": "Levantamento", "text": "Análise do imóvel, do projeto aprovado ou da exigência do Bombeiro." },
+          { "title": "Proposta", "text": "Projeto e lista de materiais com fabricantes de primeira linha." },
+          { "title": "Execução", "text": "Obra acompanhada pelo mesmo profissional que fez a venda." },
+          { "title": "Teste e entrega", "text": "Sistema testado, documentado e pronto para a vistoria." }
+        ],
+        "faq": [
+          { "q": "Qual a diferença entre hidrante e mangotinho?", "a": "Os dois levam água pressurizada para o combate ao fogo. O mangotinho usa mangueira semirrígida, fica sempre conectado e é mais fácil de operar por uma pessoa só. O hidrante usa mangueiras flexíveis acopladas na hora. Qual deles é exigido depende do uso e do risco da edificação." },
+          { "q": "De quanto em quanto tempo as mangueiras de incêndio precisam de manutenção?", "a": "A ABNT NBR 12779 prevê inspeção periódica das mangueiras e manutenção com ensaio hidrostático em intervalos definidos. A Extinsan faz a inspeção, o teste e a substituição quando a mangueira é reprovada." },
+          { "q": "Vocês cobrem orçamento de outra empresa?", "a": "Traga o orçamento que você recebeu. A gente compara o escopo item por item e apresenta a nossa melhor condição." }
+        ]
+      },
+      "photos": []
+    },
+    {
+      "slug": "para-raios-spda",
+      "name": "Para-raios (SPDA) e laudos",
+      "short": "Venda e instalação de para-raios, laudo de inspeção técnica e medição de resistência de aterramento.",
+      "icon": "bolt",
+      "bullets": ["Instalação conforme NBR 5419","Laudo de inspeção técnica","Medição de aterramento"],
+      "page": {
+        "enabled": true,
+        "title": "Para-raios (SPDA) e Laudo de Aterramento em Barra de São Francisco - ES | Extinsan",
+        "description": "Venda e instalação de para-raios (SPDA), laudo de inspeção técnica e medição de resistência de aterramento para alvará e seguro. Barra de São Francisco e região.",
+        "h1": "Para-raios (SPDA) e laudo de inspeção",
+        "lead": "Instalação, inspeção e laudo do sistema de proteção contra descargas atmosféricas — com quem instalou respondendo pela garantia.",
+        "intro": [
+          "O SPDA, Sistema de Proteção contra Descargas Atmosféricas, é o conjunto de captores, descidas e aterramento que conduz a descarga do raio para o solo sem passar pela estrutura e pelas pessoas. O projeto, a instalação e a inspeção seguem a ABNT NBR 5419, e o laudo com a medição do aterramento costuma ser pedido na vistoria do Corpo de Bombeiros, pelo seguro e pelo condomínio.",
+          "Na Extinsan, o mesmo profissional que instala é quem vende e dá a garantia. Trabalhamos com fabricantes reconhecidos e entregamos o laudo de inspeção técnica com a medição de resistência do aterramento."
+        ],
+        "signsTitle": "Quando você precisa de SPDA ou de laudo",
+        "signs": ["O Corpo de Bombeiros exigiu SPDA no projeto ou na vistoria","O laudo do para-raios está vencido","Houve reforma no telhado e o sistema foi mexido","Cabos de descida soltos, rompidos ou oxidados","A seguradora ou o síndico pediu o laudo","O imóvel é alto, isolado ou guarda material inflamável"],
+        "scopeTitle": "O que fazemos",
+        "scope": ["Avaliação da necessidade de SPDA","Venda e instalação de para-raios","Captores, descidas e malha de aterramento","Medição de resistência de aterramento","Laudo de inspeção técnica","Manutenção e adequação de sistemas existentes"],
+        "process": [
+          { "title": "Avaliação", "text": "Visita ao imóvel, análise da estrutura e do risco." },
+          { "title": "Instalação", "text": "Captação, descidas e aterramento com materiais de fabricantes reconhecidos." },
+          { "title": "Medição", "text": "Medição de resistência de aterramento com equipamento próprio." },
+          { "title": "Laudo", "text": "Laudo de inspeção técnica pronto para o Bombeiro, o seguro ou o condomínio." }
+        ],
+        "faq": [
+          { "q": "Todo prédio precisa de para-raios?", "a": "Não. A necessidade depende do porte, da altura, do uso e do risco da edificação, conforme a ABNT NBR 5419 e as exigências do Corpo de Bombeiros do ES. A Extinsan faz essa avaliação antes de orçar." },
+          { "q": "O que vem no laudo de SPDA?", "a": "O laudo registra a inspeção visual do sistema, a continuidade das descidas, a medição de resistência do aterramento e as não conformidades encontradas, com as correções necessárias." }
+        ]
+      },
+      "photos": []
+    },
+    {
+      "slug": "instalacao-de-gas-glp",
+      "name": "Projeto e instalação de gás GLP",
+      "short": "Central de gás, rede de distribuição e teste de estanqueidade para comércios, condomínios e indústrias.",
+      "icon": "gas",
+      "bullets": ["Central de GLP","Rede de distribuição","Teste de estanqueidade"],
+      "page": {
+        "enabled": true,
+        "title": "Projeto e Instalação de Gás GLP em Barra de São Francisco - ES | Extinsan",
+        "description": "Projeto e execução de central de gás GLP e rede de distribuição para restaurantes, condomínios e indústrias, com teste de estanqueidade e documentação para o Corpo de Bombeiros.",
+        "h1": "Projeto e instalação de gás GLP",
+        "lead": "Central de gás e tubulação dentro da norma, para cozinha industrial, condomínio ou indústria passar na vistoria sem refazer obra.",
+        "intro": [
+          "Botijão dentro da cozinha e mangueira passando pela parede são motivos clássicos de reprovação na vistoria — e de acidente. Instalações de gás liquefeito de petróleo em comércios, condomínios e indústrias precisam de central de GLP em local adequado e ventilado, rede de distribuição dimensionada e teste de estanqueidade, conforme as normas ABNT NBR 13523 e NBR 15526 e as exigências do Corpo de Bombeiros do ES.",
+          "A Extinsan projeta e executa a instalação de gás GLP junto com o restante da segurança contra incêndio do imóvel, para que tudo seja aprovado de uma vez."
+        ],
+        "signsTitle": "Você precisa disso se",
+        "signs": ["Vai abrir restaurante, lanchonete, padaria ou cozinha industrial","O Bombeiro apontou irregularidade na central de gás","Os botijões ficam dentro do ambiente","Sente cheiro de gás ou a chama está amarelada","O condomínio vai trocar botijão individual por central"],
+        "scopeTitle": "O que fazemos",
+        "scope": ["Projeto de central de GLP","Abrigo da central, ventilação e sinalização","Rede de distribuição de gás","Instalação de reguladores e válvulas","Teste de estanqueidade","Adequação de instalações existentes"],
+        "process": [
+          { "title": "Visita", "text": "Levantamento do consumo, do local da central e do trajeto da rede." },
+          { "title": "Projeto", "text": "Dimensionamento conforme as normas e as exigências do CBMES." },
+          { "title": "Execução", "text": "Central, tubulação e acessórios instalados pela equipe." },
+          { "title": "Teste", "text": "Teste de estanqueidade e entrega documentada." }
+        ],
+        "faq": [
+          { "q": "Posso deixar o botijão dentro da cozinha do meu restaurante?", "a": "Em estabelecimentos comerciais, o gás normalmente precisa ficar em uma central externa, ventilada e sinalizada, ligada aos equipamentos por rede fixa. As exigências dependem da quantidade de gás armazenada. A Extinsan avalia o seu caso." },
+          { "q": "O que é teste de estanqueidade?", "a": "É o ensaio que verifica se a rede de gás tem vazamento, feito com a tubulação pressurizada antes de liberar o uso. Ele é exigido na entrega da instalação e após reformas." }
+        ]
+      },
+      "photos": []
+    },
+    {
+      "slug": "curso-brigada-de-incendio",
+      "name": "Curso de brigada de incêndio",
+      "short": "Formação de brigadistas com teoria e prática: uso de extintores, abandono de área e primeiros socorros.",
+      "icon": "helmet",
+      "bullets": ["Teoria e prática com extintores","Abandono de área","Primeiros socorros"],
+      "page": {
+        "enabled": true,
+        "title": "Curso de Brigada de Incêndio em Barra de São Francisco - ES | Extinsan",
+        "description": "Curso de formação de brigada de incêndio para empresas, escolas e condomínios: prevenção, uso de extintores, abandono de área e primeiros socorros.",
+        "h1": "Curso de formação de brigada de incêndio",
+        "lead": "Sua equipe sabendo o que fazer nos primeiros minutos — que é quando um princípio de incêndio é apagado ou vira tragédia.",
+        "intro": [
+          "Extintor na parede não apaga fogo sozinho. A brigada de incêndio é o grupo de funcionários treinado para prevenir, agir no princípio de incêndio, conduzir o abandono do prédio e prestar os primeiros socorros até a chegada do Corpo de Bombeiros. A formação segue a ABNT NBR 14276, e a quantidade de brigadistas depende da população e do risco do imóvel.",
+          "A Extinsan leva o treinamento para a sua empresa, condomínio ou escola, com parte teórica e prática no uso dos equipamentos que a sua equipe vai encontrar no dia a dia."
+        ],
+        "signsTitle": "Quem precisa de brigada",
+        "signs": ["Empresas e indústrias em que o projeto de incêndio exige brigada","Escolas, igrejas, clubes e locais de reunião de público","Condomínios com funcionários fixos","Hospitais, clínicas e lares","Eventos e espaços com grande circulação de pessoas"],
+        "scopeTitle": "O que o curso cobre",
+        "scope": ["Prevenção e teoria do fogo","Classes de incêndio e escolha do extintor","Uso prático de extintores","Hidrantes e mangotinhos","Plano de abandono e rotas de fuga","Primeiros socorros básicos","Organização e atribuições da brigada"],
+        "process": [
+          { "title": "Dimensionamento", "text": "Quantos brigadistas o seu imóvel precisa e quem participa." },
+          { "title": "Teoria", "text": "Prevenção, comportamento do fogo, equipamentos e abandono." },
+          { "title": "Prática", "text": "Uso real de extintores e simulação de abandono." },
+          { "title": "Registro", "text": "Lista de presença e registro do treinamento para a sua documentação." }
+        ],
+        "faq": [
+          { "q": "Quantos funcionários precisam fazer o curso de brigada?", "a": "A quantidade de brigadistas é calculada pela população fixa do imóvel e pelo nível de risco, conforme a ABNT NBR 14276 e as normas do Corpo de Bombeiros do ES. A Extinsan faz esse cálculo com você." },
+          { "q": "O treinamento pode ser feito na minha empresa?", "a": "Sim. O curso pode ser aplicado no próprio local, o que facilita a simulação de abandono com as rotas reais do prédio. Combine data e turma pelo WhatsApp." }
+        ]
+      },
+      "photos": []
+    },
+    {
+      "slug": "sinalizacao-e-iluminacao-de-emergencia",
+      "name": "Sinalização e iluminação de emergência",
+      "short": "Placas fotoluminescentes, luminárias de emergência, rotas de fuga e fitas antiderrapantes.",
+      "icon": "exit",
+      "bullets": ["Placas fotoluminescentes","Luminárias de emergência","Fitas antiderrapantes"],
+      "page": {
+        "enabled": true,
+        "title": "Placas Fotoluminescentes e Iluminação de Emergência em Barra de São Francisco - ES | Extinsan",
+        "description": "Venda e instalação de placas fotoluminescentes, luminárias de emergência, sinalização de rota de fuga e fitas antiderrapantes. Barra de São Francisco e região.",
+        "h1": "Sinalização e iluminação de emergência",
+        "lead": "Quando a luz acaba e a fumaça sobe, é a placa certa no lugar certo que leva as pessoas até a saída.",
+        "intro": [
+          "Sinalização de emergência é o conjunto de placas que indica saídas, rotas de fuga, equipamentos de combate e riscos. As placas fotoluminescentes absorvem luz e brilham no escuro, ficando visíveis mesmo sem energia. A iluminação de emergência acende sozinha quando falta luz, garantindo o caminho até a saída. As duas são exigidas pelo Corpo de Bombeiros e seguem a ABNT NBR 13434 (sinalização) e a NBR 10898 (iluminação).",
+          "A Extinsan fornece e instala as placas, as luminárias e os itens de segurança complementares, como as fitas antiderrapantes para escadas e rampas, de acordo com o projeto do imóvel."
+        ],
+        "signsTitle": "Você precisa disso se",
+        "signs": ["As placas estão desbotadas ou não brilham no escuro","Falta a placa acima de algum extintor ou hidrante","As luminárias de emergência não acendem no teste","A rota de fuga mudou depois de uma reforma","Escadas e rampas sem proteção antiderrapante"],
+        "scopeTitle": "O que fazemos",
+        "scope": ["Placas fotoluminescentes de saída e rota de fuga","Placas de equipamentos (extintor, hidrante, alarme)","Placas de alerta e proibição","Luminárias e blocos autônomos de emergência","Teste e substituição de baterias","Fitas antiderrapantes e fitas de demarcação","Levantamento da sinalização exigida no projeto"],
+        "process": [
+          { "title": "Levantamento", "text": "Conferência do que o projeto e a vistoria exigem." },
+          { "title": "Fornecimento", "text": "Placas e luminárias nos modelos e tamanhos corretos." },
+          { "title": "Instalação", "text": "Fixação nas alturas e posições previstas em norma." },
+          { "title": "Teste", "text": "Teste das luminárias e conferência das rotas no escuro." }
+        ],
+        "faq": [
+          { "q": "Placa comum serve ou precisa ser fotoluminescente?", "a": "As placas de orientação e salvamento, como saída e rota de fuga, precisam ser fotoluminescentes para continuar visíveis sem energia elétrica. A exigência completa depende do projeto do imóvel." },
+          { "q": "De quanto em quanto tempo devo testar a iluminação de emergência?", "a": "As luminárias devem ser testadas periodicamente, simulando a falta de energia, para conferir se acendem e por quanto tempo a bateria segura. A Extinsan pode fazer esse teste e trocar as baterias que não passarem." }
+        ]
+      },
+      "photos": []
+    }
+  ],
+
+  "tracking": {
+    "_readme": "Vazio = a tag não é injetada. Preencha e rode `npm run build`.",
+    "gtmId": "",
+    "ga4Id": "",
+    "metaPixelId": "",
+    "googleAdsId": "",
+    "googleAdsLeadLabel": "",
+    "webhookUrl": ""
+  },
+
+  "agency": { "name": "AF Tecnologia e Marketing", "url": "https://wa.me/5527996015367" }
+}

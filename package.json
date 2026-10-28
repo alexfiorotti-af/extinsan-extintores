@@ -1,0 +1,17 @@
+{
+  "name": "extinsan-extintores",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site da Extinsan Extintores — Barra de São Francisco/ES. HTML estático gerado a partir de data/site.json.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "assets": "node scripts/assets.mjs",
+    "check": "node scripts/build.mjs && node scripts/check.mjs",
+    "dev": "node scripts/build.mjs && npx --yes serve dist -l 4321"
+  },
+  "devDependencies": {
+    "playwright": "^1.55.0"
+  },
+  "engines": { "node": ">=20" }
+}

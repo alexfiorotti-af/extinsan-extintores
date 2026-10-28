@@ -1,0 +1,3 @@
+Fotos dos serviços — padrão de nome: servico-descricao-cidade.jpg
+Ex.: recarga-oficina-extincol-barra-de-sao-francisco.jpg / shp-abrigo-hidrante-ecoporanga.jpg
+Mínimo 3 por serviço, horizontais, tamanho original. Liste em data/site.json -> services[].photos.
