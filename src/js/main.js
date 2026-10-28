@@ -30,21 +30,6 @@
   addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false); });
   addEventListener('resize', function () { if (innerWidth >= 1024) setMenu(false); });
 
-  // Mapa: só carrega o iframe do Google quando a pessoa pede
-  document.querySelectorAll('[data-map]').forEach(function (box) {
-    var btn = box.querySelector('[data-map-load]');
-    if (!btn) return;
-    btn.addEventListener('click', function () {
-      var f = document.createElement('iframe');
-      f.src = box.getAttribute('data-src');
-      f.title = 'Mapa: localização da Extinsan Extintores';
-      f.loading = 'lazy';
-      f.referrerPolicy = 'no-referrer-when-downgrade';
-      box.appendChild(f);
-      box.querySelector('.map-facade').remove();
-      if (window.ExtTrack) ExtTrack.track('map_load', { map_location: 'location' });
-    });
-  });
 
   // Ferramenta: quando vence o extintor
   var tool = document.querySelector('[data-validity]');

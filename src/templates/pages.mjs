@@ -221,15 +221,11 @@ const locationBlock = (site) => {
       <h3 class="h4">Cidades atendidas</h3>
       <ul class="chips">${b.areaServed.map((c) => `<li>${esc(c)}</li>`).join('')}<li>e região</li></ul>
     </div>
-    <div class="map" data-map data-src="${esc(b.mapsEmbed)}">
-      <div class="map-facade">
-        <div class="map-pin">${icons.pin}</div>
-        <p><strong>${esc(b.name)}</strong><br>${esc(a.street)} · ${esc(a.neighborhood)}</p>
-        <div class="map-actions">
-          <button type="button" class="btn btn-ghost-dark btn-sm" data-map-load>Carregar mapa</button>
-          <a class="btn btn-primary btn-sm" href="${esc(b.mapsUrl)}" target="_blank" rel="noopener" data-track="outbound" data-location="map-directions">Como chegar</a>
-        </div>
-      </div>
+    <div class="map-wrap">
+    <div class="map">
+      <iframe src="${esc(b.mapsEmbed)}" title="Mapa: ${esc(b.name)}, ${esc(a.street)}, ${esc(a.city)} - ${esc(a.state)}" width="600" height="450" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+      <a class="btn btn-primary btn-sm map-go" href="${esc(b.mapsUrl)}" target="_blank" rel="noopener" data-track="outbound" data-location="map-directions">${icons.pin}<span>Como chegar pelo Google Maps</span></a>
     </div>
   </div>
 </section>`;
